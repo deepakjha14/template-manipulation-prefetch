@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="prefetch" href="./TempA/index.js" as="script"></link>
+    <link rel="prefetch" href="./TempB/index.js" as="script"></link>
+</head>
+<body>
+    <div id="root"> I am the placeholder for templates </div>
+    <template id="tempA">
+        <script type="text/javascript" src="TempA/index.js"></script>
+        <div domcontentloaded="alert('yes')"> I am template A</div>
+        <button onclick="changeTemplate()">Click to Change</button>
+
+    </template>
+    <template id="tempB">
+        <script src="TempB/index.js"></script>
+        <div> I am template B</div>
+        <button onclick="changeTemplate()">Click to Change</button>
+    </template>
+</body>
+</html>
